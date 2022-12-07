@@ -1,0 +1,29 @@
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.label {
+  display: block;
+}
+
+.labelName {
+  display: block;
+  font-size: .875rem;
+  margin-bottom: .3rem;
+}
+
+.input {
+  width: 100%;
+  padding: .875rem ;
+  border-radius: .5rem;
+  outline: none;
+  border: 1px solid transparent;
+  transition: .2s;
+  transition-property: border, box-shadow/
+}
+
+.input:focus {
+  box-shadow: 0 0 .35rem rgba(0,0,0,.15);
+  border: 1px solid #ccc;
+}

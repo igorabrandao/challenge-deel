@@ -1,0 +1,67 @@
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: .5rem;
+  margin-top: .35rem;
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 450px;
+  overflow: auto;
+}
+
+.listItem {
+  padding: .5rem 0;
+  padding-left: .75rem;
+  font-size: .875rem;
+  cursor: pointer;
+}
+
+.listItem:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+.listItem:hover b {
+  color: white;
+}
+
+.highlightedText {
+  color: cadetblue;
+  text-decoration: underline;
+}
+
+.statusBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.notFoundText {
+  font-size: .875rem;
+}
+
+.loadingSpinner {
+  display: inline-block;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  border-top-color: cadetblue;
+  height: 2rem;
+  width: 2rem;
+  animation: spin 1s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
